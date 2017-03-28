@@ -24,4 +24,5 @@ done
 vzctl create $NEXT --ostemplate /mnt/pve/NFS/template/cache/ubuntu-16.04-x86_64.tar.gz --config default_ubuntu
 vzctl set $NEXT --hostname ubuntu$NEXT.xbs --save
 vzctl set $NEXT --save --ipadd $NEXTIP
+vzctl set $NEXT --userpasswd root:12QWaszx
 vzctl start $NEXT
