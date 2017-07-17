@@ -1,4 +1,5 @@
 #!/bin/bash
+#скрипт для автоматического развертывания контейнера OpenVZ
 ls /etc/pve/nodes/hwser01/qemu-server | awk -F. '{print $1}' > id.txt 
 ls /etc/pve/nodes/hwser02/qemu-server | awk -F. '{print $1}' >> id.txt
 ls /etc/pve/nodes/hwser04/qemu-server | awk -F. '{print $1}' >> id.txt
